@@ -1,21 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Mis botones</title>
-    <link rel="stylesheet" href="botones.css">
-    <script src="botones.js"></script>
+  <title>Reto Challenge - Cumplimiento de Retos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="date"],
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
-
 <body>
-  <h1>Mis destacadas</h1>
-  <div id="contenedorBotones">
+  <h1>Reto Challenge - Cumplimiento de Retos</h1>
+  <form>
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha">
 
-  </div>
-  <input type="text" id="cuadroTexto" style="display: none;">
-  <button id="botonCancelar" style="display: none;">Cancelar</button>
-  <button id="nuevoBoton" onclick="crearBoton()">Agregar botón</button>
-  <button id="eliminarBoton">Eliminar botón</button>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+
+    <p>Por favor, marca los retos que has cumplido:</p>
+
+    <input type="checkbox" id="reto1" name="reto1">
+    <label for="reto1">Volver a grabar videos de plastilina</label><br>
+
+    <input type="checkbox" id="reto2" name="reto2">
+    <label for="reto2">Volver a grabar videos de lettering</label><br>
+
+    <input type="checkbox" id="reto3" name="reto3">
+    <label for="reto3">Empezar a hacer lives en TikTok</label><br>
+
+    <input type="checkbox" id="reto4" name="reto4">
+    <label for="reto4">Empezar a leer mis libros de programación</label><br>
+
+    <input type="checkbox" id="reto5" name="reto5">
+    <label for="reto5">Terminar a Mirabel de encanto en plastilina</label><br>
+
+    <label for="observaciones">Observaciones:</label>
+    <textarea id="observaciones" name="observaciones" rows="4" cols="50"></textarea>
+
+    <input type="submit" value="Enviar">
+  </form>
 </body>
-
 </html>
